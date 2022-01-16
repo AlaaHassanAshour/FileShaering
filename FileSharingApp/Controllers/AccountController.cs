@@ -376,13 +376,13 @@ namespace FileSharingApp.Controllers
                     //    Body = body.ToString(),
                     //    Subject = "Reset Password"
                     //});
-                    await mailService.SendEmailAsync(new MailRequestViewModel()
-                    {
-                        Attachments = null,
-                        Body = body.ToString(),
-                        Subject = "Email Confirmation Message",
-                        ToEmail = model.Email
-                    });
+                    //await mailService.SendEmailAsync(new MailRequestViewModel()
+                    //{
+                    //    Attachments = null,
+                    //    Body = body.ToString(),
+                    //    Subject = "Email Confirmation Message",
+                    //    ToEmail = model.Email
+                    //});
                 }
                 TempData["SuccessMessage"] = "If your email matched an existing account in our system ,you should recive email ";
 
